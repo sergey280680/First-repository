@@ -1,0 +1,106 @@
+@media screen and (min-width: 320px) {
+
+
+
+    /*  спецификация  */
+body {
+
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+    /*  первый экран "HOME"  */
+.header {
+    background: #FFFFFF;
+}
+
+.logo {
+    display: block;
+    width: 105px;
+    float: left;
+    margin: 8px auto 15px 15px;
+}
+
+.burger {
+    display: block;
+    float: right;
+    margin-top: 16px;
+}
+
+.burger a {
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+    /*   меню бургер   */
+.menu-toggle {
+    color: #080808;
+ }
+
+.search {
+    color: #080808;
+}
+
+.recreate {
+    background-image: url("../img/union.png");
+    height: 378px;
+}
+
+.wrap {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    margin: 360px auto 0 auto;
+    padding: 0 24px 24px 24px;
+}
+
+.wrap__title {
+    font-size: 30px;
+    color: black;
+    width: 240px;
+    text-align: center;
+}
+
+h1 {
+    margin: 25px auto 0 auto;
+}
+
+.wrap__input {
+    width: 240px;
+    height: 56px;
+    border: 1px solid #A6AAB4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 28px auto 0 auto;
+    padding-left: 10px;
+}
+
+.wrap__regButton {
+    width: 241px;
+    height: 48px;
+    background: #B08D57;
+    border-radius: 32px;
+    margin-top: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
