@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+           initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heaven Memory</title>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?
+            family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <!--  подключение bootstrap до основного файла стилей  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--    hidden menu block   -->
+    <div class="hidd">
+    <nav id="sidebar-wrapper">
+        <div class="hidd__name">
+            <p>Martin Hörich</p>
+        </div>
+        <div class="hidd__email">
+            <p>test2019@gmail.com</p>
+        </div>
+        <hr>
+        <ul class="hidd__sidebar-nav">
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    Create a memorial
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Get Help
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    My Account
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    Plans and Features
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-podcast" aria-hidden="true"></i>
+                    About Us
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Contact Us
+                </a>
+            </li>
+            <hr>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-window-restore" aria-hidden="true"></i>
+                    Terms of Use
+                </a>
+            </li>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Privacy Policy
+                </a>
+            </li>
+            <hr>
+            <li class="hidd__sidebar-nav-item">
+                <a class="hidd__js-scroll-trigger" href="#">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    Sign Out
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--    header  -->
+    <header class="header">
+            <div class="logo header__logo">
+                <img src="img/frame.png" class="logo__img" alt="logo">
+            </div>
+            <div class="menu header__menu">
+                <!--  кнопка поиск  -->
+                <a class="menu-search" href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <!--  меню бургер  -->
+                <a class="menu-toggle" href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+            </div>
+    </header>
+<!--    front page home    -->
+    <div class="home">
+        <div class="section">
+            <div class="background">
+                <img src="img/candle.png" class="background__candle" alt="candle">
+            </div>
+        </div>
+        <div class="section">
+            <div class="container container-story">
+                <div class="story">
+                    <h1 class="story__title">Recreate the story of your loved ones</h1>
+                </div>
+            <!--    fill field      -->    
+                <div class="field">
+                    <form action="index.html" class="field__form" name="registr">
+                        <input type="text" placeholder="First Name" name="name1" class="field__input">
+                        <input type="text" placeholder="Last Name" name="name2" class="field__input">
+                    </form>
+                    <button class="field__btn">get started</button>
+                </div>
+                <div class="recent">
+                    <h2 class="recent__title">Recent online memorial websites</h2>
+                    <img src="img/girl.png" alt="" class="recent__girl">
+                    <p>Jon Doe</p>
+                    <img src="img/grfather.png" alt="" class="recent__grfather">
+                    <P>Franz Ferdinand</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/72edbb49bb.js"></script>
+</body>
+</html>
