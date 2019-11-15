@@ -146,19 +146,19 @@ h1 {
     }
     .magnifying-glass-path {
         fill:none;
-        stroke-dasharray: 210 808;
+        stroke-dasharray: 210, 808;
         stroke-linecap:round;
         stroke-width:6;
         stroke:#000;
         transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
     }
     .search.active .magnifying-glass-path {
-        stroke-dasharray: 580 808;
+        stroke-dasharray: 580, 808;
         stroke-dashoffset: -224px;
     }
     .x {
         fill:none;
-        stroke-dasharray: 56 92;
+        stroke-dasharray: 56, 92;
         stroke-dashoffset: -92px;
         stroke-linecap:round;
         stroke-width:6;
