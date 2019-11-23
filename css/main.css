@@ -107,7 +107,9 @@ h1, h2 {
     width: 250px;
     transition: all 0.4s ease 0s;
 }
-
+.hidden-menu__sidebar-nav-item--line {
+    border-bottom: 2px solid #E8E9EC;
+}
 
 /* ======== logo ========= */
 .header__logo {
