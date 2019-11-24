@@ -26,6 +26,10 @@ header {
 }
 a, button {
     cursor: pointer;
+    outline: none;
+}
+input {
+    outline: none;
 }
 h3, h4, h5, p, a {
     font-family: 'Sarabun', sans-serif;
@@ -130,107 +134,69 @@ h1, h2 {
 
 /*======== search button =========*/
     .search {
-        position: relative;
-        width: 150px;
-        margin-right: 16px;
-        color: #000;
-    }
-    .magnifying-glass {
-        position: relative;
-        transform: translateX(85%);
-        transition: transform 500ms;
-    }
-    .search.active .magnifying-glass {
-        transform: translateX(-3%);
-    }
-    .magnifying-glass-path {
-        fill:none;
-        stroke-dasharray: 210, 808;
-        stroke-linecap:round;
-        stroke-width:6;
-        stroke:#000;
-        transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
-    }
-    .search.active .magnifying-glass-path {
-        stroke-dasharray: 580, 808;
-        stroke-dashoffset: -224px;
-    }
-    .x {
-        fill:none;
-        stroke-dasharray: 56, 92;
-        stroke-dashoffset: -92px;
-        stroke-linecap:round;
-        stroke-width:6;
-        stroke:#000;
-        transition: stroke-dashoffset 500ms;
-        visibility: hidden;
-    }
-    .search.active .x {
-        visibility: visible;
-    }
-    .search.searching .x {
-        stroke-dashoffset: 0;
-    }
-    .input {
-         display: none;
-         border: 0;
-         font-size: 1em;
-         left: 15px;
-         outline: 0 !important;
-         position: absolute;
-         width: 110px;
-     }
-    .search.active .input {
-        display: block;
-    }
-    .overlay {
-        background: rgba(0,0,0,0);
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        transition: background 300ms;
-    }
-    .overlay-1 {
-        height: 32px;
-        left: 123px;
-        top: -6px;
-        width: 32px;
-    }
-    .overlay-2 {
-        height: 25px;
-        left: 123px;
-        top: -4px;
-        width: 25px;
-    }
-    .overlay:hover {
-        background: rgba(0,0,0,0.08);
-    }
-    .search.active .overlay-1 {
-        visibility: hidden;
-    }
-    .search:not(.active) .overlay-2,
-    .search:not(.searching) .overlay-2 {
-        visibility: hidden;
-    }
-
-
-/* ===== menu burger ======*/
-.menu-toggle:hover {
-    color: #000;
-}
-.menu-toggle {
-    color: #000;
-    font-size: 18px;
-}
-.fa-bars {
+    right: 16px;
     position: relative;
-    top: 0;
-    left: 0;
+    width: 20px;
 }
-.fa-times {
+.search-btn {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    width: 16px;
     position: relative;
-    top: 0;
-    left: 0;
+    z-index: 2;
+    display: none;
+    left: -35px;
+}
+.search-img {
+    top: 2px;
+    left: 4.5px;
+    display: none;
+    position: relative;
+}
+.search-input {
+    width: 140px;
+    padding: 5px 45px 5px 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 #000;
+    border: none;
+    appearance: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Sarabun', sans-serif;
+    border-radius: 22px;
+    position: absolute;
+    left: -115px;
+    top: -1px;
+    opacity: 0;
+    z-index: -1;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+.search--active
+.search-input {
+    opacity: 1;
+    z-index: 1;
+}
+.search--active
+.search-btn {
+    display: block;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    left: 1px;
+}
+.search--active
+.search-img {
+    display: none;
+}
+.search--active
+.search-img-btn {
+    display: block;
 }
 
 
@@ -262,6 +228,7 @@ input {
     transition: all .2s ease;
 }
 input.form__form-style {
+    font-family: 'Sarabun', sans-serif;
     color: #000;
     display: block;
     width: 100%;
@@ -275,8 +242,8 @@ input.form__form-style {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background-color: #fff;
-    font-size: 120%;
-    letter-spacing: 0.16em;
+    font-size: 100%;
+    letter-spacing: 0.08em;
 }
 .field input.form__form-style {
     width: 100%;
