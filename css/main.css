@@ -465,9 +465,8 @@ input[type="radio"]:checked + .radio-btn__radio:after {
 
 /*==== image upload window ====*/
 .step1__logo-holder {
-    max-width: 288px;
     overflow: hidden;
-    margin: 39px 0;
+    margin: 39px auto;
     min-height: 50px;
     border-radius: 6px;
 }
