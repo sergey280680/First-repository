@@ -20,10 +20,6 @@ header {
     height: 56px;
     margin: 0;
 }
-.row {
-    margin: 0;
-    padding: 0;
-}
 a, button {
     cursor: pointer;
     outline: none;
@@ -52,6 +48,14 @@ h1, h2 {
     text-align: center;
     color: #000000;
     margin-bottom: 26px;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+section .container {
+  margin: 0;
+  padding: 0;
 }
 
 /*  ===== hidden menu block =======   */
@@ -592,7 +596,6 @@ input[type="radio"]:checked + .radio-btn__radio:after {
 }
 .container {
     display: block;
-    margin: 0;
     padding: 0 16px 60px;
 }
 .container__text-cards-from-search-p {
@@ -615,6 +618,7 @@ input[type="radio"]:checked + .radio-btn__radio:after {
 }
 .container__text-tribute {
     margin: 0 16px;
+    width: 100%;
 }
 .container__text-tribute-p {
     font-style: normal;
@@ -662,6 +666,9 @@ input[type="radio"]:checked + .radio-btn__radio:after {
     color: #3F3356;
     margin-left: 10px;
     margin-bottom: 2px;
+}
+.container__label-img3 {
+   margin: 0 auto 5px;
 }
 .container__img3 {
     margin: 0 22px 33px;
