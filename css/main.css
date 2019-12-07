@@ -14,7 +14,7 @@ hr {
   width: 100%;
 }
 section {
-  margin: 0;
+  margin: 0 16px;
   padding: 0;
 }
 a, button {
@@ -44,13 +44,8 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
   text-align: center;
   color: #000000;
-  margin-bottom: 26px;
+  margin: 0;
 }
-
-
-
-
-
 
 /* ====== header page home ===== */
 .header {
@@ -93,8 +88,8 @@ h1, h2 {
   opacity: 0.3;
 }
 
-
-.memorial-search-background {
+/*=====  memorial-search-background-img =======*/
+.memorial-search-background-img {
   z-index: -1;
   display: block;
   height: 378px;
@@ -103,35 +98,48 @@ h1, h2 {
   top: -57px;
 }
 
-/*=====  search button page home =======*/
+/* =====  search button page home ======= */
 .memorial-search {
   margin: 0 16px;
   text-align: center;
 }
-input::-webkit-input-placeholder {
+/* ======= Firefox prior to version 51 uses a pseudo-element*/
+.memorial-search__field-input::-moz-placeholder {
   color: #000;
   letter-spacing: 0.2px;
   font-size: 16px;
 }
-/*input:-moz-placeholder {*/
-/*  color: #F832FF;*/
-/*  font-style: italic;*/
-/*  background: #E0EFCA;*/
-/*}*/
-/*input:-ms-input-placeholder {*/
-/*  color: #B6C0A5;*/
-/*  font-style: italic;*/
-/*  background: #E0EFCA;*/
-/*}*/
-/** {box-sizing: border-box;}*/
+/* ====== Chrome, to version 57, Opera to version 44, Safari to version 10.1 and Android use a pseudo-element*/
+.memorial-search__field-input::-webkit-input-placeholder {
+  color: #000;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+/* ===== Internet Explorer uses a pseudo-class*/
+.memorial-search__field-input:-ms-input-placeholder {
+  color: #000;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+/* ==== Microsoft Edge uses a pseudo-element*/
+.memorial-search__field-input::-ms-input-placeholder {
+  color: #000;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+.memorial-search__field-input::placeholder {
+  color: #000;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+* {box-sizing: border-box;}
 .memorial-search__field {
   position: relative;
-  /*width: 100%;*/
 
 }
 .memorial-search__field-input {
   width: 100%;
-  height: 42px;
+  height: 56px;
   padding-left: 10px;
   border: 1px solid #B08D57;
   border-radius: 6px;
@@ -143,26 +151,144 @@ input::-webkit-input-placeholder {
   margin-top: 100px;
   position: absolute;
   top: 0;
-  right: 0px;
-  width: 42px;
-  height: 42px;
+  right: 0;
+  width: 50px;
+  height: 56px;
   border-left: 1px solid rgba(176,141,87,1);
   background: rgba(255, 255, 255, 0);
   border-radius: 0 6px 6px 0;
   cursor: pointer;
 }
-.memorial-search__field-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
+
+/* ====== create-memorial-form ======== */
+.section {
+  margin: 0 19px;
+}
+.recreate-story {
+  padding: 1px 21px;
+  background-color: #fff;
+  position: relative;
+  top: -105px;
+}
+.recreate-story__text {
+  margin: 20px 0;
+}
+.tab-form__box-input {
+  position: relative;
+}
+.tab-form__input-tab-form {
+  border: 1px solid #A6AAB4;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 6px;
   color: #000;
+  font-style: normal;
+  font-weight: normal;
+}
+.tab-form__input-tab-form:focus {
+  border: 1px solid #000;
+}
+
+.tab-form__box-input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #A6AAB4;
+  transition: .5s;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight:normal;
+  pointer-events: none;
+}
+.tab-form__input-tab-form:focus {
+  color: #000;
+}
+.tab-form__input-tab-form:focus ~ .tab-form__box-input-label,
+.tab-form__input-tab-form:valid ~ .tab-form__box-input-label {
+  background-color: #fff;
+  top: -15px;
+  left: 14px;
+  padding: 3px 5px;
+  font-size: 10px;
+  color: #A6AAB4;
+}
+.tab-form__get-start-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 32px;
+  background: #B08D57;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ==== hover buttons*/
+.tab-form__get-start-btn:hover {
+  transform: scale(1.01) scale(1);
 }
 
 
-
-
-
-
+/*======= Recent online memorial websites =========*/
+/*======== owl carousel ========*/
+.memorial-websites {
+  margin: 0;
+  position: relative;
+  top: -50px;
+}
+.memorial-websites__title {
+  margin: 0 40px 27px;
+}
+.owl-carousel__item {
+  width: 175px;
+}
+.owl-carousel__img {
+  display: block;
+  width: 185px;
+  height: 175px;
+  border-radius: 5%;
+  margin-bottom: 9px;
+  margin-top: 10px;
+  box-shadow: 1px 3px 6px 1px rgba(0,0,0,0.3);
+}
+.owl-carousel__p  {
+  text-align: center;
+}
+.owl-carousel__item-caption,
+.owl-carousel__item-years {
+  text-align: center;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  color: #fff;
+  border: none;
+  font: inherit;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #B08D57;
+  margin: 0 35px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px 1px rgba(176,141,87,0.5);
+  transform: scale(0.9) scale(1);
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #B08D57;
+  color: #FFF;
+  text-decoration: none;
+  transform: scale(1.01) scale(1);
+}
+.owl-theme .owl-nav {
+  margin-top: 32px;
+}
 
 
 

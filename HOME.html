@@ -12,9 +12,14 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
+    <!--    owl carousel    -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 <!-- ====  connecting bootstrap to the main stylesheet ==== -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 <header>
@@ -39,23 +44,82 @@
         <div class="memorial-search">
             <form class="memorial-search__field" action="" method="get" >
                 <input name="s" class="memorial-search__field-input" placeholder="Enter the last name" type="search">
-                <button class="memorial-search__field-button" type="submit"></button>
+                <button class="memorial-search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
-
     </div>
-
-
 </header>
-<section>
+<div class="memorial-search-background-img"></div>
 
-
-    <div class="memorial-search-background">
-
+<section class="section">
+<!--    ====== create-memorial-form ========-->
+    <div class="recreate-story">
+        <h1 class="recreate-story__text">Recreate the story of your loved one</h1>
+        <form class="recreate-story__tab-form tab-form">
+            <div class="tab-form__box-input">
+                <input type="text" class="tab-form__input-tab-form" required>
+                <label class="tab-form__box-input-label">First name</label>
+            </div>
+            <div class="tab-form__box-input">
+                <input type="text" class="tab-form__input-tab-form" required>
+                <label class="tab-form__box-input-label">Last name</label>
+            </div>
+            <button class="tab-form__get-start-btn">get started</button>
+        </form>
     </div>
 </section>
-<section>
-
+<!-- ======= Recent online memorial websites ========= -->
+<section class="memorial-websites">
+        <div class="memorial-websites__title">
+            <h2 class="memorial-websites__title-h2">Recent online memorial websites</h2>
+        </div>
+        <!-- ======== owl carousel ======== -->
+    <div class="memorial-websites__wrapper">
+        <div class="memorial-websites__owl-carousel owl-carousel owl-theme" id="carousel1">
+            <div class="owl-carousel__item item">
+                <a target="_blank" href="#">
+                    <img src="img/grandfather.png" alt="Franz Ferdinand (1945-2010)" class="owl-carousel__img">
+                    <div class="owl-carousel__item-caption">Franz<br>Ferdinand</div>
+                    <div class="owl-carousel__item-years">2005-2009</div>
+                </a>
+            </div>
+            <div class="owl-carousel__item item">
+                <a target="_blank" href="#">
+                    <div class="owl-carousel__item">
+                        <img src="img/girl.png" alt="" class="owl-carousel__img">
+                        <div class="owl-carousel__item-caption">Sofia<br>Buchholz</div>
+                        <div class="owl-carousel__item-years">2005-2009</div>
+                    </div>
+                </a>
+            </div>
+            <div class="owl-carousel__item item">
+                <a target="_blank" href="#">
+                    <img src="img/luca.png" alt="Luca Lütkemöller" class="owl-carousel__img">
+                    <div class="owl-carousel__item-caption">Luca<br>Lütkemöller</div>
+                    <div class="owl-carousel__item-years">1948-2019</div>
+                </a>
+            </div>
+            <div class="owl-carousel__item item">
+                <a target="_blank" href="#">
+                    <img src="img/michael-jackson.jpg" alt="Michael Jackson (1958-2010)" class="owl-carousel__img">
+                    <div class="owl-carousel__item-caption">Michael<br>Jackson</div>
+                    <div class="owl-carousel__item-years">1958-2009</div>
+                </a>
+            </div>
+            <div class="owl-carousel__item item">
+                <a target="_blank" href="#">
+                    <img src="img/luca.png" alt="Luca Lütkemöller" class="owl-carousel__img">
+                    <div class="owl-carousel__item-caption">Luca<br>Lütkemöller</div>
+                    <div class="owl-carousel__item-years">1948-2019</div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
