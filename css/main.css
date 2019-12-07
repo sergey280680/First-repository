@@ -83,7 +83,6 @@ h1, h2 {
   width: 250px;
   height: 100%;
   margin: 0;
-  padding: 25px 0;
   list-style: none;
   background-color: #fff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
@@ -112,7 +111,7 @@ h1, h2 {
   display: block;
   text-decoration: none;
   color: #000;
-  padding: 26px 0 8px 20px;
+  padding: 13px 0 13px 20px;
 }
 .menu__sidebar-nav-item .menu__js-scroll-trigger:hover {
   text-decoration: none;
@@ -121,6 +120,9 @@ h1, h2 {
 }
 .menu__sidebar-nav-item--line {
   border-bottom: 2px solid #E8E9EC;
+}
+.menu__icon {
+  margin-right: 7px;
 }
 
 /* ====== header page home ===== */
