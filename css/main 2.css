@@ -269,33 +269,61 @@ h1, h2 {
 .tab-form__input-tab-form:focus {
   border: 1px solid #000;
 }
+/* ===== color placeholder for different browsers ==== */
+.tab-form__input-tab-form::-webkit-input-placeholder {
+  color: #A6AAB4;
+}
+.tab-form__input-tab-form::-moz-placeholder  {
+  color: #A6AAB4;
+}
+.tab-form__input-tab-form:-moz-placeholder {
+  color: #A6AAB4;
+}
+.tab-form__input-tab-form:-ms-input-placeholder {
+  color: #A6AAB4;
+}
+
+.tab-form__input-tab-form:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.tab-form__input-tab-form:focus::-moz-placeholder {
+  color: transparent;
+}
+.tab-form__input-tab-form:focus:-moz-placeholder  {
+  color: transparent;
+}
+.tab-form__input-tab-form:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
 .tab-form__box-input-label {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  padding-left: 10px;
+  top: -15px;
+  left: 9px;
   color: #A6AAB4;
   transition: .5s;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 24px;
   letter-spacing: 0.2px;
   font-family: 'Sarabun', sans-serif;
-  font-weight:normal;
+  font-weight: normal;
   pointer-events: none;
+  background-color: #fff;
+  padding: 0 7px;
+  display: none;
 }
 .tab-form__input-tab-form:focus {
   color: #000;
 }
-.tab-form__input-tab-form:focus ~ .tab-form__box-input-label,
-.tab-form__input-tab-form:valid ~ .tab-form__box-input-label {
+
+.tab-form__input-tab-form:focus ~ .tab-form__box-input-label {
+  display: block;
   background-color: #fff;
   top: -15px;
   left: 14px;
   padding: 3px 5px;
   font-size: 10px;
-  color: #A6AAB4;
+  color: #000;
 }
 .tab-form__get-start-btn {
   width: 100%;
@@ -310,7 +338,7 @@ h1, h2 {
   text-align: center;
   text-transform: uppercase;
 }
-          /* ==== hover buttons*/
+/* ==== hover buttons*/
 .tab-form__get-start-btn:hover {
   transform: scale(1.01) scale(1);
 }
@@ -369,16 +397,5 @@ h1, h2 {
 .owl-theme .owl-nav {
   margin-top: 32px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
