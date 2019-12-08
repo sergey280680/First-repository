@@ -69,10 +69,12 @@ h1, h2 {
   cursor: pointer;
 }
 #menu__toggle:checked ~ .menu__btn {
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: 4;
   top: 1px;
+  cursor: default;
 }
 .menu__box {
   display: block;
@@ -295,7 +297,7 @@ h1, h2 {
   font-size: 10px;
   color: #A6AAB4;
 }
-.recreate-story__get-start-btn {
+.tab-form__get-start-btn {
   width: 100%;
   height: 48px;
   border-radius: 32px;
