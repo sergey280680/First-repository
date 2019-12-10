@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Heaven Memory</title>
     <meta name="viewport"
-          content="width=device-width, user-scalable=no,
-           initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <!-- =========== font-awesome icon ============== -->
@@ -117,8 +116,8 @@
 
         <!--  =====  search button page home ======= -->
         <div class="memorial-search">
-            <form class="memorial-search__field" action="" method="get" >
-                <input name="s" class="memorial-search__field-input" placeholder="Enter the last name" type="search">
+            <form class="memorial-search__field" action="/find-memorial" method="get" >
+                <input name="s" class="memorial-search__field-input" placeholder="Enter the last name" type="search" autocomplete="off">
                 <button class="memorial-search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
@@ -168,7 +167,7 @@
                 </a>
             </div>
             <div class="owl-carousel__item item">
-                <a target="_blank" href="#">
+                <a target="_blank" href="card-from-search.html">
                     <img src="img/luca.png" alt="Luca Lütkemöller" class="owl-carousel__img">
                     <div class="owl-carousel__item-caption">Luca<br>Lütkemöller</div>
                     <div class="owl-carousel__item-years">1948-2019</div>
@@ -192,7 +191,6 @@
     </div>
 </section>
 
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>

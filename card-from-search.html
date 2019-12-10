@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Heaven Memory</title>
     <meta name="viewport"
-          content="width=device-width, user-scalable=no,
-           initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- =========== font-awesome icon ============== -->
@@ -106,8 +105,8 @@
         </label>
 
         <div class="search-box field">
-            <form class="memorial-search__field" action="" method="get" >
-                <input name="s" class="search__field-input" placeholder="Enter the last name" type="search">
+            <form class="memorial-search__field" method="get" >
+                <input name="s" class="search__field-input"  placeholder="Enter the last name" type="search">
                 <button class="search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
@@ -222,7 +221,8 @@
                 <div class="container__img">
                     <img src="img/rose.png" alt="candle">
                     <div class="container__share">
-                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <a target="_blank" href="#" class="container__share-icon">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i></a>
                         <p class="container__share-text">Share</p>
                     </div>
                 </div>
@@ -237,18 +237,17 @@
                 Leave a tribute
             </h2>
             <div class="container__position">
+
                 <input class="container__radio-input" type="radio" id="rose" name="theme">
                 <label for="rose" class="container__label-img3">
-                    <div class="container__img3">
-                        <img src="img/rose.png" alt="candle">
-                    </div>
+                        <img class="img3" src="img/rose.png" alt="candle">
                 </label>
+
                 <input class="container__radio-input" type="radio" id="candle4" name="theme">
                 <label for="candle4" class="container__label-img3">
-                    <div class="container__img3">
-                        <img src="img/candle4.png" alt="candle">
-                    </div>
+                        <img class="img3" src="img/candle4.png" alt="candle">
                 </label>
+
             </div>
             <div class="container__form-story">
                 <textarea  class="container__form-story-field" name="comment" cols="40" rows="10" placeholder="Add your tribute text here"></textarea>
@@ -260,10 +259,6 @@
 
 </section>
 
-
-
-
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
