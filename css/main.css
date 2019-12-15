@@ -597,18 +597,11 @@ h1, h2 {
   margin-left: 10px;
   padding-top: 2px;
 }
-.container__position {
-  text-align: center;
-}
 .container__label-img3 {
   margin: 20px auto;
   display: grid;
 }
-/*.container__img3 {*/
-/*  margin: 0 22px 33px;*/
-/*}*/
 .container__form-story-field {
-  margin: 10px;
   padding: 10px;
   width: 100%;
   border-radius: 6px;
