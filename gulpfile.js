@@ -252,12 +252,19 @@ var copyFiles = function (done) {
 };
 
 // copy vendor files
-var copyVendor = function(done) {
+var copyVendor = function (done) {
 
-  return src(__dirname + '/node_modules/bootstrap3/dist/**/*')
-      .pipe(dest(paths.staticFiles.output + '/bootstrap3'))
-      .pipe(src(__dirname + '/node_modules/owl.carousel/dist/**/*'))
+  src(__dirname + '/node_modules/bootstrap3/dist/**/*')
+      .pipe(dest(paths.staticFiles.output + '/bootstrap3'));
+
+  src(__dirname + '/node_modules/owl.carousel/dist/**/*')
       .pipe(dest(paths.staticFiles.output + '/owl.carousel'));
+
+  src(__dirname + '/node_modules/jquery/dist/**/*')
+      .pipe(dest(paths.staticFiles.output + '/jquery'));
+
+
+  return done();
 
 };
 
