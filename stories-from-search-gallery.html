@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- =========== font-awesome icon ============== -->
+    <!-- =========== font-awesome icon ============== -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-<!-- ====  connecting bootstrap to the main stylesheet ==== -->
+    <!-- ====  connecting bootstrap to the main stylesheet ==== -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -23,7 +23,7 @@
 <body>
 <header>
 
-<!-- ================= hidden menu block ==========================  -->
+    <!-- ================= hidden menu block ==========================  -->
     <div class="hidden-menu menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -97,100 +97,113 @@
         </div>
     </div>
 
-    <!--    ====== header page home =====  -->
-    <div class="header">
-        <div class="header__row">
-            <div class="header__menu-toggle">
-                <button class="header__menu-toggle-btn">
-                    <i class="header__fa-bars fa fa-bars fa-lg"></i>
-                </button>
-            </div>
-            <div class="header__logo">
-                <img src="img/logo-white.png" class="header__logo-img" alt="logo">
-            </div>
-            <div class="header__search">
+    <!--  ==================== hidden box search  ================== -->
+    <div class="hidden-search search">
+        <input id="hidden-search" type="checkbox" />
+        <label class="search__btn" for="hidden-search">
+            <span></span>
+        </label>
 
-            </div>
-        </div>
-        <hr class="header__border">
-
-        <!--  =====  search button page home ======= -->
-        <div class="memorial-search">
-            <form class="memorial-search__field" action="/find-memorial" method="get" >
-                <input name="s" class="memorial-search__field-input" placeholder="Enter the last name" type="search" autocomplete="off">
-                <button class="memorial-search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <div class="search-box field">
+            <form class="memorial-search__field" method="get" >
+                <input name="s" class="search__field-input"  placeholder="Enter the last name" type="search">
+                <button class="search__field-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
     </div>
+
+    <!-- ============= header  ==============  -->
+    <div class="header">
+        <div class="header__row">
+
+            <div class="header__menu-burger">
+                <button class="header__menu-toggle-btn">
+                    <i class="header__burger fa fa-bars fa-lg"></i>
+                </button>
+            </div>
+
+            <div class="header__logo">
+                <a target="_blank" href="home.html">
+                    <img src="img/frame.png" class="header__logo-img" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__search">
+                <button class="header__menu-search-btn">
+                    <i class="header__fa-search fa fa-search fa-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+
+        </div>
+        <hr class="header__border-burger">
+
+    </div>
 </header>
-<div class="memorial-search-background-img"></div>
 
-<section class="section">
-<!--    ====== create-memorial-form ========-->
-    <div class="recreate-story">
-        <h1 class="recreate-story__text">Recreate the story of your loved one</h1>
-        <form class="recreate-story__tab-form tab-form">
-            <div class="tab-form__box-input">
-                <input type="text" class="tab-form__input-tab-form" required>
-                <label class="tab-form__box-input-label">First name</label>
-            </div>
-            <div class="tab-form__box-input">
-                <input type="text" class="tab-form__input-tab-form" required>
-                <label class="tab-form__box-input-label">Last name</label>
-                <button type="submit" class="tab-form__get-start-btn">get started</button>
-            </div>
-        </form>
-    </div>
-</section>
-<!-- ======= Recent online memorial websites ========= -->
-<section class="memorial-websites">
-        <div class="memorial-websites__title">
-            <h2 class="memorial-websites__title-h2">Recent online memorial websites</h2>
+<section>
+    <div class="main-photo">
+        <div class="main-photo__background-photo">
+            <img src="img/image-0.png" alt="candle" class="main-photo__background-photo-img">
         </div>
-        <!-- ======== owl carousel ======== -->
-    <div class="memorial-websites__wrapper">
-        <div class="memorial-websites__owl-carousel owl-carousel owl-theme" id="carousel1">
-            <div class="owl-carousel__item item">
-                <a target="_blank" href="#">
-                    <img src="img/grandfather.png" alt="Franz Ferdinand (1945-2010)" class="owl-carousel__img">
-                    <div class="owl-carousel__item-caption">Franz<br>Ferdinand</div>
-                    <div class="owl-carousel__item-years">2005-2009</div>
-                </a>
+        <div class="main-photo__photo-person">
+            <img src="img/luca.png" alt="photo" class="main-photo__photo-person-img">
+            <div class="main-photo__name">
+                <div class="main-photo__first-name">
+                    <p class="main-photo__text">Luca</p>
+                </div>
             </div>
-            <div class="owl-carousel__item item">
-                <a target="_blank" href="#">
-                    <div class="owl-carousel__item">
-                        <img src="img/girl.png" alt="" class="owl-carousel__img">
-                        <div class="owl-carousel__item-caption">Sofia<br>Buchholz</div>
-                        <div class="owl-carousel__item-years">2005-2009</div>
-                    </div>
-                </a>
+            <div class="main-photo__name">
+                <div class="main-photo__last-name">
+                    <p class="main-photo__text">Lütkemöller</p>
+                </div>
             </div>
-            <div class="owl-carousel__item item">
-                <a target="_blank" href="card-from-search.html">
-                    <img src="img/luca.png" alt="Luca Lütkemöller" class="owl-carousel__img">
-                    <div class="owl-carousel__item-caption">Luca<br>Lütkemöller</div>
-                    <div class="owl-carousel__item-years">1948-2019</div>
-                </a>
-            </div>
-            <div class="owl-carousel__item item">
-                <a target="_blank" href="#">
-                    <img src="img/michael-jackson.jpg" alt="Michael Jackson (1958-2010)" class="owl-carousel__img">
-                    <div class="owl-carousel__item-caption">Michael<br>Jackson</div>
-                    <div class="owl-carousel__item-years">1958-2009</div>
-                </a>
-            </div>
-            <div class="owl-carousel__item item">
-                <a target="_blank" href="#">
-                    <img src="img/luca.png" alt="Luca Lütkemöller" class="owl-carousel__img">
-                    <div class="owl-carousel__item-caption">Luca<br>Lütkemöller</div>
-                    <div class="owl-carousel__item-years">1948-2019</div>
-                </a>
+            <div class="main-photo__name">
+                <div class="main-photo__life-time">
+                    <p class="main-photo__text">(1948 - 2019)r</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="nav-biography-person">
+    <div class="nav-biography-person__nav-biography nav-biography">
+        <ul class="nav-biography__tabs">
+            <li class="nav-biography__tabs-li">
+                <a class="nav-biography__tabs-a" href="card-from-search.html">About</a>
+            </li>
+            <li class="nav-biography__tabs-li">
+                <a class="nav-biography__tabs-a" href="stories-from-search-life.html">Life</a>
+            </li>
+            <li class="nav-biography__tabs-li">
+                <a class="nav-biography__tabs-a--color" href="stories-from-search-gallery.html">Gallery</a>
+            </li>
+            <li class="nav-biography__tabs-li">
+                <a class="nav-biography__tabs-a" href="stories.html">Stories</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+</section>
+<section class="up-load-photo-biography">
+    <div class="up-load-photo-biography__up-load-photo up-load-photo">
+        <button class="up-load-photo__btn-up-load-photo"><i class="fa fa-camera" aria-hidden="true"></i>Add a photo</button>
+        <div class="up-load-photo__photo-box">
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+            <div class="up-load-photo-img"></div>
+        </div>
+    </div>
+</section>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
