@@ -263,9 +263,7 @@ var copyVendor = function (done) {
   src(__dirname + '/node_modules/jquery/dist/**/*')
       .pipe(dest(paths.staticFiles.output + '/jquery'));
 
-
   return done();
-
 };
 
 // copy fonts files into output folder
