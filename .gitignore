@@ -2,8 +2,7 @@ build
 vendor
 phpcs.xml
 phpunit.xml
+node_modules
 .env
 .DS_Store
 dist
-gallery.html
-
