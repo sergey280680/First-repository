@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAEA,KACE,cAHS,CAEX,QAII,UAAW,CACZ,EAID,cAAe,CACf,UAAW,CACZ,MAIG,oBAAqB","file":"style.min.css","sourcesContent":["$color: red;\n\nbody {\n  background: $color;\n\n  h1 {\n    color: gold;\n  }\n}\n\na {\n  font-size: 15px;\n  color: aqua;\n}\n\nul {\n  li {\n    display: inline-block;\n  }\n}\n"]}
